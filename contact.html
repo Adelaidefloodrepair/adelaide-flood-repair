@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Adelaide Flood Restore</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: #1f1f1f;
+      color: #ffffff;
+    }
+    header {
+      background-color: #2c2c2c;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+    }
+    .logo {
+      font-size: 1.8rem;
+      font-family: 'Montserrat', sans-serif;
+      color: #FFD700;
+    }
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      margin-left: 2rem;
+      font-weight: 600;
+      position: relative;
+      transition: color 0.3s ease;
+    }
+    nav a::after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 2px;
+      background: #FFD700;
+      bottom: -5px;
+      left: 0;
+      transition: width 0.3s;
+    }
+    nav a:hover::after {
+      width: 100%;
+    }
+    nav a:hover {
+      color: #FFD700;
+    }
+    .hero {
+      background: linear-gradient(to right, rgba(31,31,31,0.9), rgba(44,44,44,0.9)), url('https://images.unsplash.com/photo-1581091012184-5c8afc8b0575?auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
+      padding: 6rem 2rem;
+      text-align: center;
+    }
+    .hero h1 {
+      color: #FFD700;
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+    }
+    .contact-section {
+      padding: 4rem 2rem;
+      max-width: 600px;
+      margin: auto;
+    }
+    .contact-section form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .contact-section input,
+    .contact-section textarea {
+      padding: 0.75rem;
+      border-radius: 5px;
+      border: none;
+    }
+    .contact-section button {
+      background-color: #FFD700;
+      color: #1f1f1f;
+      padding: 1rem;
+      font-weight: bold;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #2c2c2c;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">AFR</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" data-aos="fade-in">
+    <h1>Contact Us</h1>
+  </section>
+
+  <section class="contact-section" data-aos="fade-up">
+    <h2 style="color:#FFD700;">Send Us a Message</h2>
+    <form>
+      <input type="text" placeholder="Full Name" required />
+      <input type="email" placeholder="Email Address" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <textarea placeholder="Your Message" rows="5"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+    <p style="margin-top:2rem;">Phone: 1800-123-456<br>Email: info@adelaidefloodrestore.com.au</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Adelaide Flood Restore. All rights reserved.
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>

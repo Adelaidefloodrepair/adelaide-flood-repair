@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services | Adelaide Flood Restore</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: #1f1f1f;
+      color: #ffffff;
+    }
+    header {
+      background-color: #2c2c2c;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+    }
+    .logo {
+      font-size: 1.8rem;
+      font-family: 'Montserrat', sans-serif;
+      color: #FFD700;
+    }
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      margin-left: 2rem;
+      font-weight: 600;
+      position: relative;
+      transition: color 0.3s ease;
+    }
+    nav a::after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 2px;
+      background: #FFD700;
+      bottom: -5px;
+      left: 0;
+      transition: width 0.3s;
+    }
+    nav a:hover::after {
+      width: 100%;
+    }
+    nav a:hover {
+      color: #FFD700;
+    }
+    .hero {
+      background: linear-gradient(to right, rgba(31,31,31,0.9), rgba(44,44,44,0.9)), url('https://images.unsplash.com/photo-1600052147739-a7b9ae1dddf3?auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
+      padding: 6rem 2rem;
+      text-align: center;
+    }
+    .hero h1 {
+      color: #FFD700;
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+    }
+    .service-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      padding: 4rem 2rem;
+    }
+    .card {
+      background-color: #2c2c2c;
+      border-radius: 10px;
+      padding: 2rem;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card i {
+      font-size: 2rem;
+      color: #FFD700;
+      margin-bottom: 1rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #2c2c2c;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">AFR</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" data-aos="fade-in">
+    <h1>Our Services</h1>
+  </section>
+
+  <section class="service-cards">
+    <div class="card" data-aos="fade-up">
+      <i class="fas fa-water"></i>
+      <h3>Water Extraction & Drying</h3>
+      <p>Fast removal of standing water and moisture using top-grade equipment.</p>
+    </div>
+    <div class="card" data-aos="fade-up" data-aos-delay="100">
+      <i class="fas fa-biohazard"></i>
+      <h3>Mould Remediation</h3>
+      <p>Thorough detection and safe removal of mould growth in affected areas.</p>
+    </div>
+    <div class="card" data-aos="fade-up" data-aos-delay="200">
+      <i class="fas fa-thermometer-half"></i>
+      <h3>Structural Drying</h3>
+      <p>Drying of walls, flooring and hidden cavities to prevent further damage.</p>
+    </div>
+    <div class="card" data-aos="fade-up" data-aos-delay="300">
+      <i class="fas fa-smog"></i>
+      <h3>Odour Control</h3>
+      <p>Removal of lingering smells caused by water or biological damage.</p>
+    </div>
+    <div class="card" data-aos="fade-up" data-aos-delay="400">
+      <i class="fas fa-clipboard-check"></i>
+      <h3>Insurance Reports</h3>
+      <p>Professional reporting and documentation to support insurance claims.</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Adelaide Flood Restore. All rights reserved.
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>
