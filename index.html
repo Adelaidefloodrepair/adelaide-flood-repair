@@ -58,8 +58,8 @@
       color: var(--gold);
     }
     .hero {
-      padding: 4rem 2rem;
       text-align: center;
+      padding: 4rem 2rem;
       background-color: var(--gray);
     }
     .hero h1 {
@@ -79,6 +79,27 @@
       cursor: pointer;
       border-radius: 5px;
       font-size: 1rem;
+      text-decoration: none;
+    }
+    .slideshow {
+      max-width: 100%;
+      overflow: hidden;
+      position: relative;
+    }
+    .slides {
+      display: flex;
+      width: 300%;
+      animation: slide 15s infinite;
+    }
+    .slides img {
+      width: 100%;
+      height: auto;
+    }
+    @keyframes slide {
+      0% { transform: translateX(0); }
+      33% { transform: translateX(-100%); }
+      66% { transform: translateX(-200%); }
+      100% { transform: translateX(0); }
     }
     footer {
       text-align: center;
@@ -102,7 +123,15 @@
   <section class="hero">
     <h1>Water Damage & Mould Restoration</h1>
     <p>Professional. Fast. Insurance-Ready. Serving Adelaide 24/7.</p>
-    <button class="cta-btn">Request a Call</button>
+    <a href="contact.html" class="cta-btn">Request a Call</a>
+  </section>
+
+  <section class="slideshow">
+    <div class="slides">
+      <img src="https://images.unsplash.com/photo-1589927986089-35812388d1a5?auto=format&fit=crop&w=1500&q=80" alt="Water Damage Before">
+      <img src="https://images.unsplash.com/photo-1589927986067-6bbedb8a96e8?auto=format&fit=crop&w=1500&q=80" alt="During Restoration">
+      <img src="https://images.unsplash.com/photo-1597098662642-282f64daaccd?auto=format&fit=crop&w=1500&q=80" alt="Restored Property">
+    </div>
   </section>
 
   <footer>
