@@ -20,36 +20,34 @@
       padding: 1rem 2rem;
     }
     .logo {
-      font-size: 1.8rem;
-      font-family: 'Montserrat', sans-serif;
-      color: #FFD700;
-      border-bottom: 2px solid #FFD700;
-      padding-bottom: 0.2rem;
-    }
+  font-size: 1.8rem;
+  font-family: 'Montserrat', sans-serif;
+  color: #FFD700;
+}
     nav a {
-      color: #ffffff;
-      text-decoration: none;
-      margin-left: 2rem;
-      font-weight: 600;
-      position: relative;
-      transition: color 0.3s ease;
-    }
-    nav a::after {
-      content: "";
-      position: absolute;
-      width: 0;
-      height: 2px;
-      background: #FFD700;
-      bottom: -5px;
-      left: 0;
-      transition: width 0.3s;
-    }
-    nav a:hover::after {
-      width: 100%;
-    }
-    nav a:hover {
-      color: #FFD700;
-    }
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 2rem;
+  font-weight: 600;
+  position: relative;
+  transition: color 0.3s ease;
+}
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #FFD700;
+  bottom: -5px;
+  left: 0;
+  transition: width 0.3s;
+}
+nav a:hover::after {
+  width: 100%;
+}
+nav a:hover {
+  color: #FFD700;
+}
     .hero {
       background: linear-gradient(to right, rgba(31,31,31,0.9), rgba(44,44,44,0.9)), url('https://images.unsplash.com/photo-1581578731548-c64695cc6951?auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
       padding: 6rem 2rem;
